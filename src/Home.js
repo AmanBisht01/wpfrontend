@@ -16,7 +16,7 @@ const Home = () => {
   const getRoomID = (event) => {
     event.preventDefault();
   };
-  const socket = io();
+  const socket = io("https://watch-insync.herokuapp.com");
 
   socket.on("connect", () => {
     console.log("Socket connected");
