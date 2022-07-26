@@ -1,0 +1,143 @@
+.content {
+  display: flex;
+  min-height: calc(100% - 60px);
+}
+
+.ldbtn {
+  margin-left: 20px;
+  background-color: rgb(183, 55, 119);
+  color: wheat;
+  height: 50px;
+  padding: 5px;
+  width: 9.3rem;
+  border-radius: 15px;
+  transform: scale(1.05);
+  font-family: monospace;
+}
+
+.ldbtn:hover {
+  font-size: 18px;
+}
+/* Video-container */
+.video-container {
+  flex: 2.8;
+  /* padding: 30px; */
+  margin: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search-form {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  min-width: calc(100% - 0px);
+  margin-bottom: 10px;
+  
+}
+
+.video-container .search-form input {
+  max-width: 1200px;
+  width: 100%;
+  padding: 5px;
+  height: 50px;
+  border-radius: 15px;
+  font-family: monospace;
+  background-color: lightgrey;
+  
+}
+
+.video-container #player {
+  height: 500px;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  padding-left : 30px;
+  padding-right:30px;
+}
+
+.play-pause {
+  background-color: #282c34;
+  display: block;
+  border: none;
+  font-size: 27px;
+  margin-top: 4px;
+  margin-left:30px;
+}
+
+.fa-circle-pause {
+  color: white;
+}
+.fa-circle-play {
+  color: white;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1.3;
+  border-left: 2px solid black;
+  height: 750px;
+}
+
+.chat-controls {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: transparent;
+  justify-content: space-between;
+  /* height: 60px; */
+  overflow: hidden;
+}
+.controls {
+  border-radius: 15px;
+  color: lightgrey;
+  width: 80px;
+  font-family: monospace;
+}
+
+.chat {
+  background-color: rgb(31, 118, 51);
+}
+
+.chat:hover{
+  background-color: rgb(74, 166, 74);
+}
+
+.video {
+  background-color: rgb(36, 105, 166);
+}
+
+.video:hover{
+  background-color: rgb(74, 133, 185);
+}
+
+.users {
+  background-color: rgb(181, 103, 40);
+}
+
+.users:hover {
+  background-color: rgb(250, 147, 63);
+}
+
+/* chat render section */
+.chat-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: scroll; */
+  min-height: calc(100% - 130px);
+}
+
+.messsageContainer{
+  display:flex;
+  margin:15px;
+}
+
+.side-bar
+{
+  margin:10px;
+  padding:10px;
+}
