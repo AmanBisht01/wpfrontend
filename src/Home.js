@@ -25,7 +25,7 @@ const Home = () => {
   const navigate = useNavigate();
   function joinRoom() {
     axios
-      .get("/join", {
+      .get("https://watch-insync.herokuapp.com/join", {
         params: {
           roomId: roomId,
         },
@@ -37,7 +37,7 @@ const Home = () => {
   }
 
   function createRoom(e) {
-    axios.get("/room").then((res) => {
+    axios.get("https://watch-insync.herokuapp.com/room").then((res) => {
       navigate("room=/" + `${res.data.room}`);
     });
   }
