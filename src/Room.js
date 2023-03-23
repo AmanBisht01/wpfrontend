@@ -18,7 +18,7 @@ function Room() {
   const displayLink = window.location.href;
   const room = window.location.pathname.substring(7);
   const [played, setPlayed] = useState(0);
-  const socket = io("https://watch-insync.herokuapp.com");
+  const socket = io("https://wp-backend-aman.onrender.com");
   // const player = useRef(null);
 
   useEffect(() => {

@@ -16,7 +16,7 @@ const Home = () => {
   const getRoomID = (event) => {
     event.preventDefault();
   };
-  const socket = io("https://watch-insync.herokuapp.com");
+  const socket = io("https://wp-backend-aman.onrender.com");
 
   socket.on("connect", () => {
     console.log("Socket connected");
@@ -25,7 +25,7 @@ const Home = () => {
   const navigate = useNavigate();
   function joinRoom() {
     axios
-      .get("https://watch-insync.herokuapp.com/join", {
+      .get("https://wp-backend-aman.onrender.com/join", {
         params: {
           roomId: roomId,
         },
@@ -37,7 +37,7 @@ const Home = () => {
   }
 
   function createRoom(e) {
-    axios.get("https://watch-insync.herokuapp.com/room").then((res) => {
+    axios.get("https://wp-backend-aman.onrender.com/room").then((res) => {
       navigate("room=/" + `${res.data.room}`);
     });
   }
